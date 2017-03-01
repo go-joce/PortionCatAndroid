@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_cat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.cherryclaw.portioncat.AddCat">
+    <ImageView
+        android:id="@+id/image_cat"
+        android:layout_width="50dp"
+        android:layout_margin="50dp"
+        android:layout_height="50dp"
+        android:background="@android:drawable/ic_menu_camera"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText5"
+        android:hint="@string/charlie"
+
+        app:layout_constraintTop_toTopOf="@+id/Name"
+        app:layout_constraintBottom_toBottomOf="@+id/Name"
+        android:layout_marginStart="24dp"
+        app:layout_constraintLeft_toRightOf="@+id/Name" />
+
+    <TextView
+        android:text="@string/wet_or_dry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton2" />
+
+    <EditText
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName|numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText7"
+        android:hint="@string/_9"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintLeft_toLeftOf="@+id/editText" />
+
+    <TextView
+        android:text="Upload or add a photo of your cat!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup1" />
+
+    <Button
+        android:text="@string/add_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:fontFamily="sans-serif-medium"
+
+        app:layout_constraintTop_toBottomOf="@+id/image_cat"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/button2" />
+
+    <Button
+        android:text="@string/finished"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:text="@string/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Name"
+        android:textSize="18dp"
+        android:textAlignment="textEnd"
+
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:text="Weight:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="18dp"
+
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintLeft_toLeftOf="@+id/textView5"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:text="lbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="18dp"
+
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintBottom_toBottomOf="@+id/editText7"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/editText7" />
+
+    <TextView
+        android:text="@string/birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textSize="18dp"
+
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="textEnd"
+        app:layout_constraintLeft_toLeftOf="@+id/Name"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/Name" />
+
+    <Button
+        android:text="@string/cancel"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggleButton2"
+        android:textOff="@string/male"
+        android:textOn="@string/female"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText7"
+        app:layout_constraintLeft_toLeftOf="@+id/editText7" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:hint="@string/mm_dd_yyyy"
+        app:layout_constraintTop_toTopOf="@+id/textView5"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintLeft_toLeftOf="@+id/editText5" />
+
+    <RadioGroup android:id="@+id/radioGroup1"
+        android:layout_width="237dp"
+        android:layout_height="44dp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+
+        <RadioButton
+            android:text="@string/dry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonDry"
+            android:layout_weight="0.32"
+            android:gravity="center_vertical"
+            tools:layout_editor_absoluteY="243dp"
+            tools:layout_editor_absoluteX="27dp" />
+
+        <RadioButton
+            android:text="@string/wet"
+            android:layout_width="wrap_content"
+            android:id="@+id/radioButtonWet"
+            android:layout_weight="0.14"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteY="302dp"
+            tools:layout_editor_absoluteX="108dp" />
+
+    </RadioGroup>
+
+    <Button
+        android:text="@string/take_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/image_cat"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/button3"
+        app:layout_constraintBottom_toBottomOf="@+id/button" />
+
+
+</android.support.constraint.ConstraintLayout>
